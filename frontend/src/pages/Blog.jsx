@@ -49,7 +49,7 @@ export default function PostPage() {
         <p className="text-gray-500 mb-4 dark:text-white">by {post.author.username}</p>
         {post.thumbnail && (
           <img
-            src={`http://localhost:5000/uploads/${post.thumbnail}`}
+            src={`https://thinkspace-u51i.onrender.com/uploads/${post.thumbnail}`}
             alt="Thumbnail"
             className="w-full rounded mb-4"
           />
