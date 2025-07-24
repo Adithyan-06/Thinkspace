@@ -26,7 +26,7 @@ export default function EditPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await API.put(`/posts/${id}`, form);
+      await API.put(`https://thinkspace-u51i.onrender.com/api/posts/${id}`, form);
       navigate(`/posts/${id}`);
     } catch (err) {
       console.error("Update failed:", err);
