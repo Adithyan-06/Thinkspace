@@ -15,7 +15,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await API.post("/auth/register", form);
+      const res = await API.post("https://thinkspace-u51i.onrender.com/api/auth/register", form);
       login(res.data);
       navigate("/");
     } catch (err) {

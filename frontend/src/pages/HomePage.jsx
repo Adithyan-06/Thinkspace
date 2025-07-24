@@ -7,7 +7,7 @@ export default function HomePage() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await API.get("/posts");
+      const res = await API.get("https://thinkspace-u51i.onrender.com/api/posts");
       setPosts(res.data);
     };
     fetchPosts();

@@ -17,7 +17,7 @@ export default function CreatePage() {
     if (thumbnail) formData.append("thumbnail", thumbnail);
 
     try {
-      await API.post("/posts", formData);
+      await API.post("https://thinkspace-u51i.onrender.com/api/posts", formData);
       navigate("/");
     } catch (err) {
       alert("Post creation failed");

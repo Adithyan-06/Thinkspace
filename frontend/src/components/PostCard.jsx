@@ -3,7 +3,7 @@ import { Link } from "react-router";
 export default function PostCard({ post }) {
   return (
     <Link
-      to={`/posts/${post._id}`}
+      to={`https://thinkspace-u51i.onrender.com/api/posts/${post._id}`}
       className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-3xl mx-auto mb-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
     >
       <img

@@ -18,7 +18,7 @@ export function AuthProvider({ children }) {
   const logout = () => {
     setUser(null);
     localStorage.clear();
-    navigate("/"); 
+    navigate("https://thinkspace-u51i.onrender.com/api/"); 
   };
 
   return (

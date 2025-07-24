@@ -11,7 +11,7 @@ export default function EditPage() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await API.get(`/posts/${id}`);
+        const res = await API.get(`https://thinkspace-u51i.onrender.com/api/posts/${id}`);
         setForm({ title: res.data.title, content: res.data.content });
       } catch (err) {
         console.error("Failed to fetch post:", err);

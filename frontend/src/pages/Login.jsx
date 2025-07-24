@@ -17,7 +17,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await API.post("/auth/login", form);
+      const res = await API.post("https://thinkspace-u51i.onrender.com/api/auth/login", form);
       login(res.data);
       navigate("/");
     } catch (err) {
