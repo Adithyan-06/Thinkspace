@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(cors({origin:"https://thinkspace-three.vercel.app/",credentials: true}));
+app.use(cors({origin:"https://thinkspace-three.vercel.app",credentials: true}));
 app.use(express.json());
 
 const __filename = fileURLToPath(import.meta.url);
