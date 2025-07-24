@@ -26,7 +26,7 @@ export default function PostPage() {
     if (!confirmDelete) return;
 
     try {
-      await API.delete(`/posts/${id}`);
+      await API.delete(`https://thinkspace-u51i.onrender.com/api/posts/${id}`);
       navigate("/");
     } catch (err) {
       console.error("Failed to delete post:", err);
