@@ -12,7 +12,7 @@ import { useLocation } from "react-router";
 
 function MainLayout() {
   const location = useLocation();
-  const showNavbar = location.pathname === "https://thinkspace-u51i.onrender.com/api/" || location.pathname.startsWith("https://thinkspace-u51i.onrender.com/api/posts");
+  const showNavbar = location.pathname === "/" || location.pathname.startsWith("/posts");
 
   return (
     <div>
