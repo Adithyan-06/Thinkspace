@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(cors());
+app.use(cors({origin:"https://thinkspace-three.vercel.app/",credentials: true}));
 app.use(express.json());
 
 const __filename = fileURLToPath(import.meta.url);
@@ -29,4 +29,3 @@ connectDB().then(() => {
     });
   });
 
-  //"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2JiZDIyZTE0N2UwYmYzNmNiYjYxYiIsImlhdCI6MTc1MjkzOTgxMCwiZXhwIjoxNzUzNTQ0NjEwfQ.NJFR_TYqp63xCszZsLpLej1SL8gofLEVyFWx_SN-PwQ"
